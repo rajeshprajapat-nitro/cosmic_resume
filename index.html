@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aryan Sharma — Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <canvas id="starfield"></canvas>
+  <div class="nebula-layer"></div>
+  <div class="grid-overlay"></div>
+  <div class="scan-line"></div>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <div class="loader" id="loader">
+    <div class="loader-ring"></div>
+    <div class="loader-text" id="loaderText">INITIALIZING...</div>
+    <div class="loader-bar"><div class="loader-fill" id="loaderFill"></div></div>
+  </div>
+
+  <div class="universe" id="universe">
+
+    <nav class="nav-bar">
+      <div class="nav-logo">AS<span class="blink">_</span></div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="about">
+      <div class="hero-left">
+        <div class="status-badge"><span class="pulse-dot"></span>Available for opportunities</div>
+        <h1 class="name-title">
+          <span class="line1">ARYAN</span>
+          <span class="line2">SHARMA</span>
+        </h1>
+        <div class="role-wrapper">
+          <span class="role-prefix">&gt;&gt;</span>
+          <span class="role-text" id="roleText"></span>
+          <span class="role-cursor">|</span>
+        </div>
+        <p class="hero-bio">Building the future with clean code, scalable systems, and a passion for crafting extraordinary digital experiences. 3+ years turning complex problems into elegant solutions.</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn-primary"><span>Hire Me</span><div class="btn-shine"></div></a>
+          <a href="#projects" class="btn-ghost">View Projects</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><div class="stat-num" data-count="3">0</div><div class="stat-label">Years Exp</div></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><div class="stat-num" data-count="25">0</div><div class="stat-label">Projects</div></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><div class="stat-num" data-count="12">0</div><div class="stat-label">Technologies</div></div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="avatar-system">
+          <div class="avatar-ring r1"></div>
+          <div class="avatar-ring r2"></div>
+          <div class="avatar-ring r3"></div>
+          <div class="avatar-core"><div class="avatar-initials">AS</div></div>
+          <div class="orbit-dot od1"></div>
+          <div class="orbit-dot od2"></div>
+          <div class="orbit-dot od3"></div>
+          <div class="tech-tag tt1">React</div>
+          <div class="tech-tag tt2">Node.js</div>
+          <div class="tech-tag tt3">Python</div>
+          <div class="tech-tag tt4">AWS</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="section-header">
+        <h2 class="section-title"><span class="bracket">[</span> EXPERIENCE <span class="bracket">]</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card glass">
+            <div class="tl-header">
+              <div><div class="tl-role">Senior Software Engineer</div><div class="tl-company">TechCorp India Pvt. Ltd.</div></div>
+              <div class="tl-date">2022 — Present</div>
+            </div>
+            <ul class="tl-points">
+              <li>Led microservices architecture serving 2M+ daily users</li>
+              <li>Reduced API response time by 60% through Redis caching</li>
+              <li>Mentored 5 junior devs, improved sprint velocity by 35%</li>
+              <li>Architected real-time notification system using WebSockets + Kafka</li>
+            </ul>
+            <div class="tl-tags"><span>React</span><span>Node.js</span><span>PostgreSQL</span><span>Docker</span><span>AWS</span></div>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card glass">
+            <div class="tl-header">
+              <div><div class="tl-role">Software Engineer</div><div class="tl-company">Startup Labs</div></div>
+              <div class="tl-date">2021 — 2022</div>
+            </div>
+            <ul class="tl-points">
+              <li>Built full-stack e-commerce platform — 10k+ active users</li>
+              <li>Implemented CI/CD pipelines reducing deployment time by 80%</li>
+              <li>Designed REST &amp; GraphQL APIs for mobile and web clients</li>
+            </ul>
+            <div class="tl-tags"><span>Vue.js</span><span>Python</span><span>Django</span><span>MySQL</span><span>GCP</span></div>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card glass">
+            <div class="tl-header">
+              <div><div class="tl-role">Frontend Developer Intern</div><div class="tl-company">Digital Agency Co.</div></div>
+              <div class="tl-date">2020 — 2021</div>
+            </div>
+            <ul class="tl-points">
+              <li>Developed responsive UI components for 8 client projects</li>
+              <li>Improved Lighthouse performance score from 52 to 94</li>
+            </ul>
+            <div class="tl-tags"><span>HTML/CSS</span><span>JavaScript</span><span>React</span><span>Figma</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="section-header">
+        <h2 class="section-title"><span class="bracket">[</span> SKILLS <span class="bracket">]</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category reveal glass">
+          <div class="skill-cat-icon">⬡</div><h3>Frontend</h3>
+          <div class="skill-bars">
+            <div class="skill-row"><span>React / Next.js</span><div class="bar"><div class="bar-fill" data-w="92"></div></div><span class="pct">92%</span></div>
+            <div class="skill-row"><span>TypeScript</span><div class="bar"><div class="bar-fill" data-w="88"></div></div><span class="pct">88%</span></div>
+            <div class="skill-row"><span>CSS / Tailwind</span><div class="bar"><div class="bar-fill" data-w="90"></div></div><span class="pct">90%</span></div>
+            <div class="skill-row"><span>Vue.js</span><div class="bar"><div class="bar-fill" data-w="75"></div></div><span class="pct">75%</span></div>
+          </div>
+        </div>
+        <div class="skill-category reveal glass">
+          <div class="skill-cat-icon">◈</div><h3>Backend</h3>
+          <div class="skill-bars">
+            <div class="skill-row"><span>Node.js / Express</span><div class="bar"><div class="bar-fill" data-w="90"></div></div><span class="pct">90%</span></div>
+            <div class="skill-row"><span>Python / Django</span><div class="bar"><div class="bar-fill" data-w="85"></div></div><span class="pct">85%</span></div>
+            <div class="skill-row"><span>GraphQL</span><div class="bar"><div class="bar-fill" data-w="80"></div></div><span class="pct">80%</span></div>
+            <div class="skill-row"><span>REST APIs</span><div class="bar"><div class="bar-fill" data-w="95"></div></div><span class="pct">95%</span></div>
+          </div>
+        </div>
+        <div class="skill-category reveal glass">
+          <div class="skill-cat-icon">⬢</div><h3>DevOps &amp; Cloud</h3>
+          <div class="skill-bars">
+            <div class="skill-row"><span>AWS</span><div class="bar"><div class="bar-fill" data-w="82"></div></div><span class="pct">82%</span></div>
+            <div class="skill-row"><span>Docker / K8s</span><div class="bar"><div class="bar-fill" data-w="78"></div></div><span class="pct">78%</span></div>
+            <div class="skill-row"><span>CI/CD Pipelines</span><div class="bar"><div class="bar-fill" data-w="85"></div></div><span class="pct">85%</span></div>
+            <div class="skill-row"><span>Linux</span><div class="bar"><div class="bar-fill" data-w="80"></div></div><span class="pct">80%</span></div>
+          </div>
+        </div>
+        <div class="skill-category reveal glass">
+          <div class="skill-cat-icon">◇</div><h3>Databases</h3>
+          <div class="skill-bars">
+            <div class="skill-row"><span>PostgreSQL</span><div class="bar"><div class="bar-fill" data-w="88"></div></div><span class="pct">88%</span></div>
+            <div class="skill-row"><span>MongoDB</span><div class="bar"><div class="bar-fill" data-w="85"></div></div><span class="pct">85%</span></div>
+            <div class="skill-row"><span>Redis</span><div class="bar"><div class="bar-fill" data-w="80"></div></div><span class="pct">80%</span></div>
+            <div class="skill-row"><span>MySQL</span><div class="bar"><div class="bar-fill" data-w="82"></div></div><span class="pct">82%</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="section-header">
+        <h2 class="section-title"><span class="bracket">[</span> PROJECTS <span class="bracket">]</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+        <div class="proj-card reveal glass featured">
+          <div class="proj-glow"></div>
+          <div class="proj-badge">Featured</div>
+          <div class="proj-header"><div class="proj-icon">◎</div><div class="proj-links"><a href="#" class="proj-link">↗ Live</a><a href="#" class="proj-link">⌘ Code</a></div></div>
+          <h3 class="proj-name">NexaCloud Platform</h3>
+          <p class="proj-desc">Scalable SaaS platform with real-time collaboration, AI-powered features, and multi-tenant architecture serving 50k+ users.</p>
+          <div class="proj-stack"><span>Next.js</span><span>Node.js</span><span>PostgreSQL</span><span>Redis</span><span>AWS</span></div>
+        </div>
+        <div class="proj-card reveal glass">
+          <div class="proj-glow"></div>
+          <div class="proj-header"><div class="proj-icon">◉</div><div class="proj-links"><a href="#" class="proj-link">↗ Live</a><a href="#" class="proj-link">⌘ Code</a></div></div>
+          <h3 class="proj-name">AI Chat Engine</h3>
+          <p class="proj-desc">LLM-powered chatbot with context memory, RAG pipeline, and streaming responses integrated with 3 enterprise clients.</p>
+          <div class="proj-stack"><span>Python</span><span>FastAPI</span><span>LangChain</span><span>OpenAI</span></div>
+        </div>
+        <div class="proj-card reveal glass">
+          <div class="proj-glow"></div>
+          <div class="proj-header"><div class="proj-icon">⬡</div><div class="proj-links"><a href="#" class="proj-link">↗ Live</a><a href="#" class="proj-link">⌘ Code</a></div></div>
+          <h3 class="proj-name">DevOps Dashboard</h3>
+          <p class="proj-desc">Real-time infrastructure monitoring with alerting, log analysis, and auto-scaling recommendations.</p>
+          <div class="proj-stack"><span>React</span><span>D3.js</span><span>Prometheus</span><span>Grafana</span></div>
+        </div>
+        <div class="proj-card reveal glass">
+          <div class="proj-glow"></div>
+          <div class="proj-header"><div class="proj-icon">◈</div><div class="proj-links"><a href="#" class="proj-link">↗ Live</a><a href="#" class="proj-link">⌘ Code</a></div></div>
+          <h3 class="proj-name">E-Commerce Engine</h3>
+          <p class="proj-desc">High-performance e-commerce backend with dynamic pricing, inventory management, and payment gateway integration.</p>
+          <div class="proj-stack"><span>Node.js</span><span>MongoDB</span><span>Stripe</span><span>Docker</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <div class="section-header">
+        <h2 class="section-title"><span class="bracket">[</span> EDUCATION <span class="bracket">]</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card reveal glass">
+          <div class="edu-year">2017 — 2021</div>
+          <div class="edu-degree">B.Tech in Computer Science Engineering</div>
+          <div class="edu-institute">IIT / NIT / Your University Name</div>
+          <div class="edu-grade">CGPA: 8.7 / 10</div>
+        </div>
+        <div class="edu-card reveal glass">
+          <div class="edu-year">Certifications</div>
+          <div class="cert-list">
+            <div class="cert-item"><span class="cert-dot"></span>AWS Certified Developer – Associate</div>
+            <div class="cert-item"><span class="cert-dot"></span>Google Cloud Professional Engineer</div>
+            <div class="cert-item"><span class="cert-dot"></span>Meta React Developer Certificate</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="section-header">
+        <h2 class="section-title"><span class="bracket">[</span> CONTACT <span class="bracket">]</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-wrap reveal">
+        <div class="contact-text">
+          <h3>Let's Build Something <span class="gradient-text">Extraordinary</span></h3>
+          <p>Open to full-time roles, freelance projects, and exciting collaborations.</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:aryan@email.com" class="contact-item glass"><div class="contact-icon">✉</div><div><div class="contact-label">Email</div><div class="contact-value">aryan@email.com</div></div></a>
+          <a href="#" class="contact-item glass"><div class="contact-icon">⌘</div><div><div class="contact-label">GitHub</div><div class="contact-value">github.com/aryan</div></div></a>
+          <a href="#" class="contact-item glass"><div class="contact-icon">◈</div><div><div class="contact-label">LinkedIn</div><div class="contact-value">linkedin.com/in/aryan</div></div></a>
+          <a href="#" class="contact-item glass"><div class="contact-icon">☎</div><div><div class="contact-label">Phone</div><div class="contact-value">+91 98765 43210</div></div></a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>Designed &amp; Built by <span class="gradient-text">Aryan Sharma</span> · 2026</div>
+      <div class="footer-note">Made with ✦ &amp; lots of ☕</div>
+    </footer>
+
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
