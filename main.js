@@ -2,7 +2,7 @@
    COSMIC RESUME — MAIN JS
    Starfield, Loader, Cursor, Animations
 ═══════════════════════════════════════════ */
-
+ 
 // ── LOADER ──
 const loader = document.getElementById('loader');
 const loaderFill = document.getElementById('loaderFill');
