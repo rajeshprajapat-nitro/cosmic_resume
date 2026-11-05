@@ -1,6 +1,6 @@
 # 🌌 Cosmic Resume — Software Engineer
 ### Advanced 2026 HTML/CSS/JS Portfolio Resume
-
+ 
 ## ✦ Features
 - **Live Starfield Canvas** — Animated stars, nebulae & shooting meteors
 - **Typewriter Effect** — Cycling role titles
